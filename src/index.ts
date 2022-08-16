@@ -1,3 +1,14 @@
-export function add(a:number, b:number) {
-  return a + b + 10;
+import normalizeWrapper from './wrapper/normalizeWrapper';
+import rand, {RandOptions} from './features/rand';
+
+export  {
+  RandOptions
+}
+
+export {
+  rand,
+}
+
+export default {
+  rand: normalizeWrapper(rand),
 }
